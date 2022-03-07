@@ -140,6 +140,24 @@ function parseJSONToNav(jsn) {
     return result;
 };
 
+function ExpandAllNavItems() {
+    var sidebar = document.getElementById("section-sidebar")
+    var buttons = sidebar.getElementsByClassName("collapse")
+
+    for(i = 0; i < buttons.length; i++) {
+        buttons[i].classList.add("show")
+    }
+}
+
+function CollapseAllNavItems() {
+    var sidebar = document.getElementById("section-sidebar")
+    var buttons = sidebar.getElementsByClassName("collapse")
+
+    for(i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove("show")
+    }
+}
+
 // Generate sidebar on successful load
 window.onload = function () {
     console.log(GenerateJSON())
