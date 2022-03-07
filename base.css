@@ -665,7 +665,7 @@ pre[class*="language-"] {
 
 code {
     font-size: 87.5%;
-    color: #000fdb;
+    /* color: #000fdb; */
     word-break: break-word;
 }
 :not(pre) > code[class*='language-'] {
