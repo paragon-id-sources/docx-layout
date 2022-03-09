@@ -160,6 +160,10 @@ function CollapseAllNavItems() {
 
 // Generate sidebar on successful load
 window.onload = function () {
-    console.log(GenerateJSON())
+    let footnoteDiv = document.getElementsByClassName("footnotes")
+    if (footnoteDiv.length > 0 ) {
+        footnote = footnoteDiv[footnoteDiv.length - 1]
+        footnote.insertAdjacentHTML('beforebegin','<h1 id="footnote-section-div">Footnotes</h1>')
+    }
     document.getElementById('navigator').innerHTML = parseJSONToNav(GenerateJSON());
 };
