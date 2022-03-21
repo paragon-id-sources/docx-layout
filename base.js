@@ -2,6 +2,22 @@ function GetHeaders() { return document.querySelectorAll("h1, h2, h3, h4, h5, h6
 function GetHeaderIndentLevel(header) { return String(header).replace(/^\D+/g, ''); }
 function GenerateGUID() { return "nav-" + ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c => (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16) ); }
 function ScrollToID(id) { document.getElementById(String(id).replace(" ", "-")).scrollIntoView(); }
+
+
+function changeFavicon(src) {
+    document.head = document.head || document.getElementsByTagName('head')[0];
+     var link = document.createElement('link'),
+         oldLink = document.getElementById('dynamic-favicon');
+     link.id = 'dynamic-favicon';
+     link.rel = 'shortcut icon';
+     link.href = src;
+     if (oldLink) {
+      document.head.removeChild(oldLink);
+     }
+     document.head.appendChild(link);
+}
+
+
 function GenerateJSON() {
     var headerData = [];
     var headers = GetHeaders();
@@ -166,4 +182,7 @@ window.onload = function () {
         footnote.insertAdjacentHTML('beforebegin','<h1 id="footnote-section-div">Footnotes</h1>')
     }
     document.getElementById('navigator').innerHTML = parseJSONToNav(GenerateJSON());
+    
+    changeFavicon('https://i.imgur.com/6WlVCuF.png');
+
 };
