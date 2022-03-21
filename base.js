@@ -1,3 +1,6 @@
+var favicon_url = "https://i.imgur.com/aaEnmwt.png";
+
+
 function GetHeaders() { return document.querySelectorAll("h1, h2, h3, h4, h5, h6"); }
 function GetHeaderIndentLevel(header) { return String(header).replace(/^\D+/g, ''); }
 function GenerateGUID() { return "nav-" + ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c => (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16) ); }
@@ -6,7 +9,7 @@ function ScrollToID(id) { document.getElementById(String(id).replace(" ", "-")).
 
 function changeFavicon(src) {
     document.head = document.head || document.getElementsByTagName('head')[0];
-     var link = document.createElement('link'),
+     let link = document.createElement('link'),
          oldLink = document.getElementById('dynamic-favicon');
      link.id = 'dynamic-favicon';
      link.rel = 'shortcut icon';
@@ -183,6 +186,6 @@ window.onload = function () {
     }
     document.getElementById('navigator').innerHTML = parseJSONToNav(GenerateJSON());
     
-    changeFavicon('https://i.imgur.com/6WlVCuF.png');
+    changeFavicon(favicon_url);
 
 };
