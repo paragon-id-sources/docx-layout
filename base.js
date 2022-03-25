@@ -1,6 +1,6 @@
 var favicon_url = "https://i.imgur.com/aaEnmwt.png";
 var jsLinks = [
-    `https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js`,
+
 ]
 
 function AddNewScriptTags() {
