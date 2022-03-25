@@ -1,4 +1,18 @@
 var favicon_url = "https://i.imgur.com/aaEnmwt.png";
+var jsLinks = [
+    `https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js`,
+]
+
+function AddNewScriptTags() {
+    jsLinks.forEach(link => {
+        let s = document.createElement("script");
+        s.type = "text/javascript";
+        s.src = link;
+
+        document.head.appendChild(s);
+    });
+
+}
 
 
 function GetHeaders() { return document.querySelectorAll("h1, h2, h3, h4, h5, h6"); }
@@ -186,6 +200,7 @@ window.onload = function () {
     }
     document.getElementById('navigator').innerHTML = parseJSONToNav(GenerateJSON());
     
+    AddNewScriptTags();
     changeFavicon(favicon_url);
 
 };
