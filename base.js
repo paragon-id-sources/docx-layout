@@ -1,8 +1,3 @@
-import mermaid from 'https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js';
-
-mermaid.initialize({ 'theme': 'dark' });
-
-
 var favicon_url = "https://i.imgur.com/aaEnmwt.png";
 var jsLinks = [
 
