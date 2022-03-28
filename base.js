@@ -198,7 +198,9 @@ window.onload = function () {
         footnote = footnoteDiv[footnoteDiv.length - 1]
         footnote.insertAdjacentHTML('beforebegin','<h1 id="footnote-section-div">Footnotes</h1>')
     }
+    
     document.getElementById('navigator').innerHTML = parseJSONToNav(GenerateJSON());
+    document.getElementsByClassName("sidebar")[0].classList.remove("bg-white")
     
     AddNewScriptTags();
     changeFavicon(favicon_url);
