@@ -1,3 +1,5 @@
+import mermaid from 'https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js';
+
 mermaid.initialize({ 'theme': 'dark' });
 
 
