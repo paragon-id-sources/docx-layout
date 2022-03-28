@@ -1,4 +1,4 @@
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) { mermaid.initialize({ 'theme': 'dark' }); }
+mermaid.initialize({ 'theme': 'dark' });
 
 
 var favicon_url = "https://i.imgur.com/aaEnmwt.png";
