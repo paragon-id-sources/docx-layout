@@ -1,6 +1,13 @@
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) { mermaid.initialize({ 'theme': 'dark' }); }
+
+try {
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) { mermaid.initialize({ 'theme': 'dark' }); }
+} catch (error) {
+  console.error("Failed to theme mermaid.")
+}
+
 var favicon_url = "https://i.imgur.com/aaEnmwt.png";
 var jsLinks = [ ]
+
 
 function AddNewScriptTags() {
     jsLinks.forEach(link => {
@@ -192,14 +199,35 @@ function CollapseAllNavItems() {
 
 // Generate sidebar on successful load
 window.onload = function () {
-    let footnoteDiv = document.getElementsByClassName("footnotes")
-    if (footnoteDiv.length > 0 ) {
-        footnote = footnoteDiv[footnoteDiv.length - 1]
-        footnote.insertAdjacentHTML('beforebegin','<h1 id="footnote-section-div">Footnotes</h1>')
+    try {
+        let footnoteDiv = document.getElementsByClassName("footnotes")
+        if (footnoteDiv.length > 0 ) {
+            footnote = footnoteDiv[footnoteDiv.length - 1]
+            footnote.insertAdjacentHTML('beforebegin','<h1 id="footnote-section-div">Footnotes</h1>')
+        }
+    } catch (error) {
+        console.error("Failed to generate footnotes.");
+        console.error(error);
     }
     
-    document.getElementById('navigator').innerHTML = parseJSONToNav(GenerateJSON());
-    document.getElementsByClassName("sidebar")[0].classList.remove("bg-white")
+
+    
+    
+    try {
+        document.getElementById('navigator').innerHTML = parseJSONToNav(GenerateJSON());
+    } catch (error) {
+        console.error("Failed to generate sidebar.");
+        console.error(error);
+    }
+    
+    try {
+        document.getElementsByClassName("sidebar")[0].classList.remove("bg-white");
+    } catch (error) {
+        console.error("Failed to remove class from sidebar.");
+        console.error(error);
+    }
+
+    
     
     AddNewScriptTags();
     changeFavicon(favicon_url);
