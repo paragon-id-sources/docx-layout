@@ -3,6 +3,7 @@ try {
   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) { mermaid.initialize({ 'theme': 'dark' }); }
 } catch (error) {
   console.error("Failed to theme mermaid.")
+  console.error(error)
 }
 
 var favicon_url = "https://i.imgur.com/aaEnmwt.png";
