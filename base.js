@@ -1,3 +1,7 @@
+// DO NOT Remove this
+var VitalHealthCheck = true;
+
+
 try {
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) { mermaid.initialize({ 'theme': 'dark' }); }
 } catch (error) {
