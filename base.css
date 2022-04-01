@@ -1097,3 +1097,15 @@ pre[class*="language-"] {
     font-style: italic;
 }
 /* End Syntax Highlighting */
+
+@media print
+{    
+    .main-section {
+        left: 0 !important;
+    }
+    #section-sidebar
+    {
+        display: none !important;
+    }
+}
+
