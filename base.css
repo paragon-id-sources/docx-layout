@@ -1106,6 +1106,7 @@ pre[class*="language-"] {
 {
     .main-section {
         left: 0 !important;
+        width: 100% !important;
     }
     #section-sidebar
     {
