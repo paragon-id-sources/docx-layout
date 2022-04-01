@@ -214,4 +214,23 @@ window.onload = function () {
         console.error("Failed to load theme from local storage.");
         console.error(error);
     }
+
+    try {
+        let sidebar = document.getElementsByClassName('sidebar')[0]
+        let mainContent = document.getElementsByClassName("main-section")[0]
+        let sidebarDefaultSize = sidebar.offsetWidth
+
+        let resizeObserver = new ResizeObserver(entries => {
+            var children = mainContent.children;
+            for (var i = 0; i < children.length; i++) {
+                children[i].style.margin = `0px 0px 0px ${sidebar.offsetWidth - sidebarDefaultSize}px`;
+                // Do stuff
+            }
+
+        });
+        resizeObserver.observe(sidebar);
+    } catch (error) {
+        console.error("Failed to relatively resize sidebar.");
+        console.error(error);
+    }
 };
