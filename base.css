@@ -63,71 +63,71 @@ body {
     --dropdown-text-hover-color: var(--sidebar-color-text);
 }
 
-    :root.dark {
-        /* Shared */
-        --block-background-color: #3C3D3E;
-        --shared-text-color: #A9B7C6;
-        /* Root HTML*/
-        --background-color: #2B2B2B;
-        --border-color: #515151;
-        --text-color: var(--shared-text-color);
-        --text-color-href: #588EC1;
-        /* Quote Block*/
-        --quote-color-thumb: #476387;
-        --quote-color-background: var(--block-background-color);
-        --quote-color-text: var(--shared-text-color);
-        /* Code Block */
-        --code-color-background: var(--block-background-color);
-        --code-color-text: #CC7832 !important;
-        /* Sidebar */
-        --sidebar-color-background: var(--block-background-color);
-        --sidebar-color-divider: #2B2B2B;
-        --sidebar-color-icon: var(--shared-text-color);
-        --sidebar-color-text: var(--shared-text-color);
-        --sidebar-color-text-expanded: var(--shared-text-color);
-        --sidebar-color-btn-hover: #476387;
-        --sidebar-chevron-filter: invert(79%) sepia(29%) saturate(158%) hue-rotate(171deg) brightness(90%) contrast(82%);
-        /* Scrollbar */
-        --scrollbar-color-thumb: #555555;
-        /* Dropdown */
-        --dropdown-background-color: var(--background-color);
-        --dropdown-background-hover-color: var(--sidebar-color-btn-hover);
-        --dropdown-text-color: var(--sidebar-color-text);
-        --dropdown-text-hover-color: var(--sidebar-color-text);
-    }
+:root.dark {
+    /* Shared */
+    --block-background-color: #3C3D3E;
+    --shared-text-color: #A9B7C6;
+    /* Root HTML*/
+    --background-color: #2B2B2B;
+    --border-color: #515151;
+    --text-color: var(--shared-text-color);
+    --text-color-href: #588EC1;
+    /* Quote Block*/
+    --quote-color-thumb: #476387;
+    --quote-color-background: var(--block-background-color);
+    --quote-color-text: var(--shared-text-color);
+    /* Code Block */
+    --code-color-background: var(--block-background-color);
+    --code-color-text: #CC7832 !important;
+    /* Sidebar */
+    --sidebar-color-background: var(--block-background-color);
+    --sidebar-color-divider: #2B2B2B;
+    --sidebar-color-icon: var(--shared-text-color);
+    --sidebar-color-text: var(--shared-text-color);
+    --sidebar-color-text-expanded: var(--shared-text-color);
+    --sidebar-color-btn-hover: #476387;
+    --sidebar-chevron-filter: invert(79%) sepia(29%) saturate(158%) hue-rotate(171deg) brightness(90%) contrast(82%);
+    /* Scrollbar */
+    --scrollbar-color-thumb: #555555;
+    /* Dropdown */
+    --dropdown-background-color: var(--background-color);
+    --dropdown-background-hover-color: var(--sidebar-color-btn-hover);
+    --dropdown-text-color: var(--sidebar-color-text);
+    --dropdown-text-hover-color: var(--sidebar-color-text);
+}
 
-    :root.sepia {
-        /* Shared */
-        --block-background-color: #d9a168;
-        --shared-text-color: #383838;
-        /* Root HTML*/
-        --background-color: #f6a77a;
-        --border-color: #b68b5e;
-        --text-color: var(--shared-text-color);
-        --text-color-href: #588EC1;
-        /* Quote Block*/
-        --quote-color-thumb: #d3630e;
-        --quote-color-background: var(--block-background-color);
-        --quote-color-text: #563e2a;
-        /* Code Block */
-        --code-color-background: var(--block-background-color);
-        --code-color-text: #563e2a !important;
-        /* Sidebar */
-        --sidebar-color-background: var(--block-background-color);
-        --sidebar-color-divider: #2B2B2B;
-        --sidebar-color-icon: var(--shared-text-color);
-        --sidebar-color-text: var(--shared-text-color);
-        --sidebar-color-text-expanded: var(--shared-text-color);
-        --sidebar-color-btn-hover: #c5a079;
-        --sidebar-chevron-filter: invert(0%) sepia(0%) saturate(16%) hue-rotate(291deg) brightness(100%) contrast(104%);
-        /* Scrollbar */
-        --scrollbar-color-thumb: #a86c2f;
-        /* Dropdown */
-        --dropdown-background-color: var(--background-color);
-        --dropdown-background-hover-color: var(--sidebar-color-btn-hover);
-        --dropdown-text-color: var(--sidebar-color-text);
-        --dropdown-text-hover-color: var(--sidebar-color-text);
-    }
+:root.sepia {
+    /* Shared */
+    --block-background-color: #d9a168;
+    --shared-text-color: #383838;
+    /* Root HTML*/
+    --background-color: #f6a77a;
+    --border-color: #b68b5e;
+    --text-color: var(--shared-text-color);
+    --text-color-href: #588EC1;
+    /* Quote Block*/
+    --quote-color-thumb: #d3630e;
+    --quote-color-background: var(--block-background-color);
+    --quote-color-text: #563e2a;
+    /* Code Block */
+    --code-color-background: var(--block-background-color);
+    --code-color-text: #563e2a !important;
+    /* Sidebar */
+    --sidebar-color-background: var(--block-background-color);
+    --sidebar-color-divider: #2B2B2B;
+    --sidebar-color-icon: var(--shared-text-color);
+    --sidebar-color-text: var(--shared-text-color);
+    --sidebar-color-text-expanded: var(--shared-text-color);
+    --sidebar-color-btn-hover: #c5a079;
+    --sidebar-chevron-filter: invert(0%) sepia(0%) saturate(16%) hue-rotate(291deg) brightness(100%) contrast(104%);
+    /* Scrollbar */
+    --scrollbar-color-thumb: #a86c2f;
+    /* Dropdown */
+    --dropdown-background-color: var(--background-color);
+    --dropdown-background-hover-color: var(--sidebar-color-btn-hover);
+    --dropdown-text-color: var(--sidebar-color-text);
+    --dropdown-text-hover-color: var(--sidebar-color-text);
+}
 
 @media (prefers-color-scheme: dark) {
     :root {
@@ -229,14 +229,14 @@ body {
     color: var(--text-color);
 }
 
-    .dropdown-menu > li > a:hover {
-        background-color: var(--dropdown-background-hover-color);
-        color: var(--sidebar-color-text);
-    }
+.dropdown-menu > li > a:hover {
+    background-color: var(--dropdown-background-hover-color);
+    color: var(--sidebar-color-text);
+}
 
-    .dropdown-menu > * {
-        cursor: pointer;
-    }
+.dropdown-menu > * {
+    cursor: pointer;
+}
 
 .cst-border {
     background-color: var(--border-color);
@@ -779,7 +779,15 @@ body > .main-markdown h6:first-child {
 .main-markdown table {
     border-color: var(--border-color);
     padding: 0;
-    border-collapse: collapse
+    border-collapse: collapse;
+    width: 100% ;
+    overflow-wrap: break-word;
+}
+
+.main-markdown td {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
 }
 
 .main-markdown table tr {
@@ -788,10 +796,6 @@ body > .main-markdown h6:first-child {
     margin: 0;
     padding: 0;
     color: var(--text-color);
-}
-
-.main-markdown table td {
-    white-space: nowrap
 }
 
 .main-markdown table tr th {
@@ -1099,7 +1103,7 @@ pre[class*="language-"] {
 /* End Syntax Highlighting */
 
 @media print
-{    
+{
     .main-section {
         left: 0 !important;
     }
@@ -1108,4 +1112,3 @@ pre[class*="language-"] {
         display: none !important;
     }
 }
-
